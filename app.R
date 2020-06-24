@@ -22,7 +22,7 @@ phy.m.land <- phy.m[phy.m$Terrestrial == 1, ]  # only keep land mammals
 weight.limit <- 10 # set weight limit in kg
 phy.m.land <- phy.m.land[phy.m.land$Mass.g >= (weight.limit*1000), ]
 # add common names
-comm.n <- read.csv("PhylacineClickmap_commonNames_1kg.csv", row.names=1)
+comm.n <- read.csv("PhylacineClickmap_commonNames_10kg.csv", row.names=1)
 phy.m.land$commName <- comm.n$common
 
 # base raster for plot - world, no antarctica
