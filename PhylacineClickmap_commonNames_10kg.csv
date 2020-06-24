@@ -1,0 +1,617 @@
+"","latin","uids","common"
+"1","Elephas_namadicus",NA,NA
+"2","Elephas_antiquus",251093,NA
+"3","Mammuthus_columbi",1027716,"Columbian mammoth"
+"4","Mammut_americanum",39053,"American mastodon"
+"5","Elephas_iolensis",NA,NA
+"6","Megatherium_americanum",2546660,NA
+"7","Cuvieronius_hyodon",NA,NA
+"8","Mammuthus_primigenius",37349,"woolly mammoth"
+"9","Notiomastodon_platensis",NA,NA
+"10","Loxodonta_africana",9785,"African savanna elephant"
+"11","Elasmotherium_sibiricum",2491732,NA
+"12","Eremotherium_laurillardi",NA,NA
+"13","Stephanorhinus_kirchbergensis",NA,NA
+"14","Lestodon_armatus",NA,NA
+"15","Elephas_maximus",9783,"Asiatic elephant"
+"16","Megatherium_tarijense",NA,NA
+"17","Ceratotherium_simum",9807,"white rhinoceros"
+"18","Stephanorhinus_hemitoechus",NA,NA
+"19","Diprotodon_optatum",NA,NA
+"20","Coelodonta_antiquitatis",222863,"woolly rhinoceros"
+"21","Trigonodops_lopesi",NA,NA
+"22","Elephas_naumanii",NA,NA
+"23","Glyptodon_clavipes",NA,NA
+"24","Stegodon_orientalis",NA,NA
+"25","Rhinoceros_sondaicus",102233,"Javan rhinoceros"
+"26","Scelidodon_chiliensis",NA,NA
+"27","Glossotherium_robustum",2591764,NA
+"28","Toxodon_platensis",NA,NA
+"29","Rhinoceros_unicornis",9809,"greater Indian rhinoceros"
+"30","Doedicurus_clavicaudatus",NA,NA
+"31","Hippopotamus_amphibius",9833,"hippopotamus"
+"32","Paramylodon_harlani",2546661,NA
+"33","Mylodon_darwinii",48784,NA
+"34","Stegodon_trigonocephalus",NA,NA
+"35","Dicerorhinus_sumatrensis",89632,"Sumatran rhinoceros"
+"36","Diceros_bicornis",9805,"black rhinoceros"
+"37","Bubalus_palaeokerabau",NA,NA
+"38","Scelidotherium_leptocephalum",NA,NA
+"39","Elephas_mnaidriensis",NA,NA
+"40","Glyptotherium_floridanum",NA,NA
+"41","Camelops_hesternus",647691,NA
+"42","Megalonyx_jeffersonii",2576014,"Jefferson's ground sloth"
+"43","Palaeolama_major",NA,NA
+"44","Panochthus_tuberculatus",NA,NA
+"45","Palaeolama_weddeli",NA,NA
+"46","Pelorovis_antiquus",NA,NA
+"47","Mixotoxodon_larensis",NA,NA
+"48","Hemiauchenia_paradoxa",NA,NA
+"49","Xenorhinotherium_bahiense",NA,NA
+"50","Bos_primigenius",9909,"aurochs"
+"51","Giraffa_camelopardalis",9894,"giraffe"
+"52","Glyptodon_reticulatus",NA,NA
+"53","Stegodon_florensis",NA,NA
+"54","Odobenus_rosmarus",9707,"walrus"
+"55","Bos_gaurus",9904,"gaur"
+"56","Elephas_tiliensis",NA,NA
+"57","Megaceroides_algericus",NA,NA
+"58","Camelus_dromedarius",9838,"Arabian camel"
+"59","Bos_sauveli",135829,"kouprey"
+"60","Macrauchenia_patachonica",1566623,NA
+"61","Spirocerus_kiakhtensis",NA,NA
+"62","Mammuthus_exilis",1851653,"Channel Islands mammoth"
+"63","Mirounga_angustirostris",9716,"Northern elephant seal"
+"64","Bubalus_arnee",89462,"water buffalo"
+"65","Arctodus_simus",551196,"giant short-faced bear"
+"66","Candiacervus_major",NA,NA
+"67","Bos_javanicus",9906,"banteng"
+"68","Megaloceros_giganteus",227166,"Irish elk"
+"69","Camelus_ferus",419612,"Wild Bactrian camel"
+"70","Tragelaphus_derbianus",303930,"giant eland"
+"71","Cervalces_scotti",NA,NA
+"72","Syncerus_caffer",9970,"African buffalo"
+"73","Bison_bison",9901,"American bison"
+"74","Tapirus_augustus",NA,NA
+"75","Tragelaphus_oryx",9945,"eland"
+"76","Glyptotherium_cylindricum",NA,NA
+"77","Bos_mutus",72004,"wild yak"
+"78","Candiacervus_dorothensis",NA,NA
+"79","Hippidion_principale",1582057,NA
+"80","Zalophus_japonicus",686441,"Japanese sealion"
+"81","Hippopotamus_madagascariensis",NA,NA
+"82","Hippopotamus_lemerlei",NA,NA
+"83","Zygomaturus_trilobus",NA,NA
+"84","Palorchestes_azeal",NA,NA
+"85","Bison_bonasus",9902,"European bison"
+"86","Nothrotheriops_shastensis",136416,"Shasta ground sloth"
+"87","Euceratherium_collinum",NA,NA
+"88","Leptonychotes_weddellii",9713,"Weddell seal"
+"89","Ursus_spelaeus",39097,"cave bear"
+"90","Ursus_maritimus",29073,"polar bear"
+"91","Sinomegaceros_yabei",NA,NA
+"92","Panthera_spelaea",NA,NA
+"93","Equus_francisci",1983743,NA
+"94","Hydrurga_leptonyx",29086,"leopard seal"
+"95","Alces_alces",9852,"Eurasian elk"
+"96","Equus_grevyi",9792,"Grevy's zebra"
+"97","Ovibos_moschatus",37176,"muskox"
+"98","Sinomegaceros_ordosianus",NA,NA
+"99","Tragelaphus_eurycerus",69297,"bongo"
+"100","Tapirus_merriami",NA,NA
+"101","Neuryurus_trabeculatus",NA,NA
+"102","Hippidion_devillei",703571,NA
+"103","Eumetopias_jubatus",34886,"Steller sea lion"
+"104","Budorcas_taxicolor",37181,"takin"
+"105","Hexaprotodon_sivalensis",NA,NA
+"106","Bootherium_bombifrons",1922215,NA
+"107","Tapirus_bairdii",56117,"Baird's tapir"
+"108","Tapirus_indicus",9802,"Asiatic tapir"
+"109","Smilodon_populator",339609,"Greater saber-toothed cat"
+"110","Monachus_monachus",248254,"Mediterranean monk seal"
+"111","Cystophora_cristata",39293,"hooded seal"
+"112","Hoplophorus_euphractus",NA,NA
+"113","Erignathus_barbatus",39304,"bearded seal"
+"114","Tapirus_veroensis",NA,NA
+"115","Equus_africanus",582580,NA
+"116","Hippotragus_equinus",37186,"roan antelope"
+"117","Kolpochoerus_majus",NA,NA
+"118","Ommatophoca_rossii",207342,NA
+"119","Equus_kiang",94398,"kiang"
+"120","Equus_zebra",9791,"mountain zebra"
+"121","Choeropsis_liberiensis",56798,"pygmy hippopotamus"
+"122","Lobodon_carcinophaga",101849,"crabeater seal"
+"123","Procoptodon_goliah",NA,NA
+"124","Okapia_johnstoni",86973,"okapi"
+"125","Hippotragus_niger",37189,"sable antelope"
+"126","Equus_ovodovi",1225531,NA
+"127","Equus_hydruntinus",379504,NA
+"128","Soergelia_minor",NA,NA
+"129","Bubalus_mindorensis",56639,"tamaraw"
+"130","Neomonachus_schauinslandi",29088,"Hawaiian monk seal"
+"131","Candiacervus_rethymnensis",NA,NA
+"132","Smilodon_fatalis",13266,"saber-toothed cat"
+"133","Holmesina_septentrionalis",NA,NA
+"134","Tragelaphus_buxtoni",69296,"mountain nyala"
+"135","Tragelaphus_strepsiceros",9946,"greater kudu"
+"136","Panthera_atrox",NA,NA
+"137","Kobus_ellipsiprymnus",9962,"waterbuck"
+"138","Tapirus_terrestris",9801,"Brazilian tapir"
+"139","Tapirus_rondoniensis",NA,NA
+"140","Valgipes_bucklandi",NA,NA
+"141","Phascolonus_gigas",NA,NA
+"142","Phanourios_minutes",NA,NA
+"143","Pampatherium_typum",NA,NA
+"144","Oryx_dammah",59534,"scimitar-horned oryx"
+"145","Neosclerocalyptus_paskoenis",NA,NA
+"146","Neomonachus_tropicalis",1295174,"Caribbean monk seal"
+"147","Megalotragus_priscus",NA,NA
+"148","Holmesina_occidentalis",NA,NA
+"149","Equus_hemionus",9794,"onager"
+"150","Equus_ferus",1114792,"tarpan"
+"151","Elephas_cypriotes",363579,NA
+"152","Homotherium_serum",339614,"Scimitar-toothed cat"
+"153","Homotherium_latidens",2048657,"European saber-tooth cat"
+"154","Hylochoerus_meinertzhageni",673354,"Giant forest hog"
+"155","Ursus_arctos",9644,"brown bear"
+"156","Rusa_unicolor",662561,"Sambar"
+"157","Ovis_ammon",30527,"argali"
+"158","Connochaetes_taurinus",9927,"brindled gnu"
+"159","Connochaetes_gnou",59528,"black wildebeest"
+"160","Arctocephalus_pusillus",37191,NA
+"161","Equus_quagga",89252,"quagga"
+"162","Sthenurus_stirlingi",NA,NA
+"163","Alcelaphus_buselaphus",59517,"hartebeest"
+"164","Oryx_beisa",344753,NA
+"165","Oryx_gazella",9958,"gemsbok"
+"166","Boselaphus_tragocamelus",9917,"nilgai"
+"167","Protemnodon_roechus",NA,NA
+"168","Panthera_tigris",9694,"tiger"
+"169","Panthera_leo",9689,"lion"
+"170","Archaeoindris_fontoynonti",NA,NA
+"171","Catonyx_cuvieri",NA,NA
+"172","Halichoerus_grypus",9711,"gray seal"
+"173","Sangamona_fugitiva",NA,NA
+"174","Tremarctos_floridanus",NA,NA
+"175","Sthenurus_atlas",NA,NA
+"176","Simosthenurus_pales",NA,NA
+"177","Rusingoryx_atopocranion",NA,NA
+"178","Procoptodon_rapha",NA,NA
+"179","Phoca_largha",39090,"spotted seal"
+"180","Pampatherium_humboldti",NA,NA
+"181","Nothrotherium_maquinense",NA,NA
+"182","Macropus_pearsoni",NA,NA
+"183","Macropus_ferragus",NA,NA
+"184","Hippotragus_leucophaeus",37185,"blue antelope"
+"185","Damaliscus_niro",NA,NA
+"186","Megalocnus_zile",NA,NA
+"187","Megalocnus_rodens",NA,NA
+"188","Elaphurus_davidianus",43332,"Pere David's deer"
+"189","Tapirus_pinchaque",30582,"mountain tapir"
+"190","Eutatus_seguini",NA,NA
+"191","Rucervus_duvaucelii",43328,"barasingha"
+"192","Metridiochoerus_compactus",NA,NA
+"193","Tremarctos_ornatus",9638,"spectacled bear"
+"194","Otaria_byronia",161932,"South American sea lion"
+"195","Arctotherium_tarijense",NA,NA
+"196","Damaliscus_lunatus",9929,"topi"
+"197","Pachyarmatherium_brasiliense",NA,NA
+"198","Cervus_elaphus",9860,"red deer"
+"199","Cervus_canadensis",1574408,NA
+"200","Protemnodon_anak",2493643,NA
+"201","Gorilla_beringei",499232,"eastern gorilla"
+"202","Capricornis_milneedwardsii",1073286,"Chinese serow"
+"203","Capra_sibirica",72544,"Siberian ibex"
+"204","Sthenurus_tindalei",NA,NA
+"205","Holmesina_paulacoutoi",NA,NA
+"206","Cervus_albirostris",1088058,"white-lipped deer"
+"207","Gorilla_gorilla",9593,"western gorilla"
+"208","Pagophilus_groenlandicus",39089,"harp seal"
+"209","Lama_guanicoe",9840,"guanaco"
+"210","Simosthenurus_occidentalis",2493644,"short-faced kangaroo"
+"211","Bubalus_grovesi",NA,NA
+"212","Babyrousa_togeanensis",NA,NA
+"213","Capricornis_thar",1734079,"Himalayan serow"
+"214","Phocarctos_hookeri",34888,"Hooker's sea lion"
+"215","Kobus_leche",59531,"lechwe"
+"216","Thylacoleo_carnifex",NA,NA
+"217","Rucervus_schomburgki",291354,"Schomburgk's deer"
+"218","Protemnodon_brehus",NA,NA
+"219","Platygonus_compressus",1983451,NA
+"220","Hemiauchenia_macrocephala",NA,NA
+"221","Zalophus_wollebaeki",419013,"Galapagos sea lion"
+"222","Ailuropoda_melanoleuca",9646,"giant panda"
+"223","Arctocephalus_townsendi",161921,"Guadalupe fur seal"
+"224","Damaliscus_pygargus",9931,NA
+"225","Arctocephalus_forsteri",29084,"New Zealand fur seal"
+"226","Sus_scrofa",9823,"pig"
+"227","Sus_bucculentus",475452,"Heude's pig"
+"228","Procoptodon_oreas",NA,NA
+"229","Phoca_vitulina",9720,"harbor seal"
+"230","Panthera_onca",9690,"jaguar"
+"231","Maokopia_ronaldi",NA,NA
+"232","Haploidoceros_mediterraneus",NA,NA
+"233","Capra_walie",509850,"Walia"
+"234","Babyrousa_babyrussa",41806,"babirusa"
+"235","Ursus_americanus",9643,"American black bear"
+"236","Potamochoerus_larvatus",273792,"bushpig"
+"237","Arctocephalus_gazella",37190,"antarctic fur seal"
+"238","Arctocephalus_philippii",161927,"Juan Fernandez fur seal"
+"239","Neochoerus_aesopi",NA,NA
+"240","Amblyrhiza_inundata",NA,NA
+"241","Melursus_ursinus",9636,"sloth bear"
+"242","Sus_verrucosus",159856,"Java warty pig"
+"243","Pusa_hispida",9718,"Ringed seal"
+"244","Pusa_sibirica",9719,"Baikal seal"
+"245","Ovis_nivicola",56194,"snow sheep"
+"246","Histriophoca_fasciata",39088,"ribbon seal"
+"247","Miracinonyx_trumani",339612,"American cheetah-like cat"
+"248","Bubalus_depressicornis",27596,"lowland anoa"
+"249","Oryx_leucoryx",39411,"Arabian oryx"
+"250","Kobus_megaceros",59532,"Nile lechwe"
+"251","Capricornis_sumatraensis",34865,"Sumatran serow"
+"252","Capricornis_rubidus",2664340,"red serow"
+"253","Blastocerus_dichotomus",248133,"marsh deer"
+"254","Antifer_ultra",NA,NA
+"255","Tragelaphus_angasii",66437,"nyala"
+"256","Rangifer_tarandus",9870,"reindeer"
+"257","Pusa_caspica",693431,"Caspian seal"
+"258","Capra_ibex",72542,"Alpine ibex"
+"259","Pseudoryx_nghetinhensis",97363,"saola"
+"260","Megaladapis_edwardsi",185953,NA
+"261","Babyrousa_celebensis",1303000,"North Sulawesi babirusa"
+"262","Arctocephalus_tropicalis",37194,"subantarctic fur seal"
+"263","Phacochoerus_africanus",41426,"Common warthog"
+"264","Tragelaphus_imberbis",9947,"lesser kudu"
+"265","Zalophus_californianus",9704,"California sea lion"
+"266","Palaeolama_mirifica",NA,NA
+"267","Castoroides_ohioensis",NA,NA
+"268","Beatragus_hunteri",59527,NA
+"269","Candiacervus_cretensis",NA,NA
+"270","Sivacobus_sankaliai",NA,NA
+"271","Kobus_kob",59530,"kob"
+"272","Tragelaphus_spekii",69298,"Sitatunga"
+"273","Ursus_thibetanus",9642,"Asiatic black bear"
+"274","Megalovis_guangxiensis",NA,NA
+"275","Homo_spDenisova",NA,NA
+"276","Homo_neanderthalensis",63221,"Neandertal"
+"277","Bubalus_quarlesi",56640,"mountain anoa"
+"278","Oreamnos_harringtoni",665113,NA
+"279","Nilgiritragus_hylocrius",NA,NA
+"280","Mylohyus_nasutus",NA,NA
+"281","Ovis_canadensis",37174,"bighorn sheep"
+"282","Megaladapis_grandidieri",NA,NA
+"283","Arctotherium_wingei",NA,NA
+"284","Rucervus_eldii",1088090,"Eld's deer"
+"285","Nanger_dama",67940,"Dama gazelle"
+"286","Oreamnos_americanus",34873,"mountain goat"
+"287","Cephalophus_silvicultor",50347,"yellow-backed duiker"
+"288","Dama_mesopotamica",141652,"Mesopotamian fallow deer"
+"289","Sthenurus_andersoni",NA,NA
+"290","Kobus_vardonii",59533,"puku"
+"291","Phacochoerus_aethiopicus",85517,"desert warthog"
+"292","Sus_barbatus",41807,"bearded pig"
+"293","Potamochoerus_porcus",273791,"red river hog"
+"294","Hippocamelus_bisulcus",397614,"Chilean guemal"
+"295","Cephalophus_jentinki",129225,"Jentink's duiker"
+"296","Addax_nasomaculatus",59515,NA
+"297","Praemegaceros_cazioti",NA,NA
+"298","Parocnus_browni",NA,NA
+"299","Diabolotherium_nordenskioldi",NA,NA
+"300","Hippocamelus_antisensis",371035,"Peruvian guemal"
+"301","Axis_axis",30531,"chital"
+"302","Hemitragus_cedrensis",NA,NA
+"303","Canis_dirus",2562269,"dire wolf"
+"304","CapriniGen_spA",NA,NA
+"305","Rusa_timorensis",1088130,"Javan rusa"
+"306","Damaliscus_hypsodon",NA,NA
+"307","Crocuta_crocuta",9678,"spotted hyena"
+"308","Capra_nubiana",72543,"Nubian ibex"
+"309","Tetrameryx_shuleri",NA,NA
+"310","Ovis_orientalis",469796,"Asiatic mouflon"
+"311","Agalmaceros_blicki",NA,NA
+"312","Homo_sapiens",9606,"human"
+"313","Redunca_arundinum",59554,"southern reedbuck"
+"314","Pongo_pygmaeus",9600,"Bornean orangutan"
+"315","Pongo_abelii",9601,"Sumatran orangutan"
+"316","Sus_ahoenobarbus",NA,NA
+"317","Dama_dama",30532,"fallow deer"
+"318","Cephalophus_spadix",129231,"Abbott's duiker"
+"319","Ovis_dalli",9943,"Dall sheep"
+"320","Odocoileus_virginianus",9874,"white-tailed deer"
+"321","Sus_celebensis",273789,"Celebes wild boar"
+"322","Metasthenurus_newtonae",NA,NA
+"323","Capra_caucasica",72540,"West Caucasian tur"
+"324","Axis_kuhlii",948700,"Bawean deer"
+"325","Panthera_pardus",9691,"leopard"
+"326","Nanger_granti",27591,"Grant's gazelle"
+"327","Odocoileus_hemionus",9872,"mule deer"
+"328","Procoptodon_gilli",NA,NA
+"329","Parocnus_serus",2546659,NA
+"330","Cervus_nippon",9863,"sika deer"
+"331","Aepyceros_melampus",9897,"impala"
+"332","Orycteropus_afer",9818,"aardvark"
+"333","Puma_concolor",9696,"puma"
+"334","Stockoceros_conklingi",NA,NA
+"335","Simosthenurus_maddocki",NA,NA
+"336","Rusa_marianna",1826171,"Philippine sambar"
+"337","Protemnodon_tumbuna",NA,NA
+"338","Procoptodon_browneorum",NA,NA
+"339","Paraceros_fragilis",NA,NA
+"340","Morenelaphus_lujanensis",NA,NA
+"341","Morenelaphus_brachyceros",NA,NA
+"342","Hydrochoerus_hydrochaeris",10149,"capybara"
+"343","Capra_pyrenaica",80419,"Spanish ibex"
+"344","Capra_cylindricornis",72541,"East Caucasian tur"
+"345","Navahoceros_fricki",NA,NA
+"346","Gazella_bilkis",NA,NA
+"347","Ammotragus_lervia",9899,"aoudad"
+"348","Rusa_alfredi",1088129,"Visayan spotted deer"
+"349","Vicugna_vicugna",9843,"vicugna"
+"350","Neolicaphrium_recens",NA,NA
+"351","Acinonyx_jubatus",32536,"cheetah"
+"352","Megaladapis_madagascariensis",NA,NA
+"353","Helarctos_malayanus",9634,"Malayan sun bear"
+"354","Macropus_rufus",9321,"red kangaroo"
+"355","Antilocapra_americana",9891,"pronghorn"
+"356","Palaeopropithecus_maximus",1597978,"giant sloth lemur"
+"357","Priodontes_maximus",183752,NA
+"358","Callorhinus_ursinus",34884,"northern fur seal"
+"359","Pseudois_nayaur",59542,"bharal"
+"360","Protemnodon_hopei",NA,NA
+"361","Arctocephalus_australis",161928,"South American fur seal"
+"362","Sus_oliveri",NA,NA
+"363","Gazella_atlantica",NA,NA
+"364","Sus_philippensis",315376,"Philippine warty pig"
+"365","Panthera_uncia",29064,"snow leopard"
+"366","Redunca_redunca",59556,"Bohar reedbuck"
+"367","Capreolus_pygargus",48560,"Eastern roe deer"
+"368","Tragelaphus_scriptus",66440,"bushbuck"
+"369","Candiacervus_spII",NA,NA
+"370","Pan_troglodytes",9598,"chimpanzee"
+"371","Palaeopropithecus_ingens",1513477,"large sloth lemur"
+"372","Hyaena_hyaena",95912,"striped hyena"
+"373","Manis_paleojavanica",NA,NA
+"374","Capra_falconeri",48167,"markhor"
+"375","Axis_calamianensis",NA,NA
+"376","Troposodon_minor",NA,NA
+"377","Protemnodon_nombe",NA,NA
+"378","Propleopus_oscillans",NA,NA
+"379","Ozotoceros_bezoarticus",63824,"pampas deer"
+"380","Nanger_soemmerringii",69306,"Soemmerring's gazelle"
+"381","Eudorcas_rufina",NA,NA
+"382","Antidorcas_australis",NA,NA
+"383","Sus_brachgnathus",NA,NA
+"384","Litocranius_walleri",69311,"gerenuk"
+"385","Antilope_cervicapra",59525,"blackbuck"
+"386","Capricornis_crispus",9966,"Japanese serow"
+"387","Muntiacus_crinifrons",71854,"black muntjac"
+"388","Catagonus_wagneri",51154,"Chacoan peccary"
+"389","Hemitragus_jemlahicus",37179,"Himalayan tahr"
+"390","Hydrochoerus_isthmius",NA,NA
+"391","Hadropithecus_stenognathus",523825,NA
+"392","Catagonus_stenocephalus",NA,NA
+"393","Axis_porcinus",57737,"Hog deer"
+"394","Pan_paniscus",9597,"pygmy chimpanzee"
+"395","Muntiacus_vuquangensis",109296,"giant muntjac"
+"396","Antidorcas_bondi",NA,NA
+"397","Elaphodus_cephalophus",109298,"tufted deer"
+"398","Capra_aegagrus",9923,"wild goat"
+"399","Smutsia_gigantea",1559511,"giant pangolin"
+"400","Sus_cebifrons",315377,"Visayan warty pig"
+"401","Tayassu_pecari",30535,"white-lipped peccary"
+"402","Parahyaena_brunnea",172271,NA
+"403","Canis_lupus",9612,"gray wolf"
+"404","Antidorcas_marsupialis",59523,"springbok"
+"405","Lasiorhinus_krefftii",30667,"northern hairy-nosed wombat"
+"406","Lontra_felina",76718,"marine otter"
+"407","Zaglossus_hacketti",NA,NA
+"408","Wallabia_kitcheneri",NA,NA
+"409","Vombatus_hacketti",NA,NA
+"410","Thylacinus_cynocephalus",9275,"Tasmanian wolf"
+"411","Rupicapra_pyrenaica",72545,"Pyrenean chamois"
+"412","Candiacervus_ropalophorus",NA,NA
+"413","Redunca_fulvorufula",59555,"mountain reedbuck"
+"414","Homo_floresiensis",NA,NA
+"415","Saiga_tatarica",34875,NA
+"416","Trachypithecus_shortridgei",1042121,"Shortridge's langur"
+"417","Naemorhedus_goral",34871,NA
+"418","Gazella_subgutturosa",59529,"goitered gazelle"
+"419","Papio_anubis",9555,"olive baboon"
+"420","Ammodorcas_clarkei",NA,NA
+"421","Papio_ursinus",36229,"Chacma baboon"
+"422","Procapra_gutturosa",157669,NA
+"423","Procapra_przewalskii",157668,"Przewalski's gazelle"
+"424","Pantholops_hodgsonii",59538,"chiru"
+"425","Naemorhedus_baileyi",1088030,"red goral"
+"426","Propraopus_sulcatus",NA,NA
+"427","Propraopus_punctatus",NA,NA
+"428","Macropus_antilopinus",9314,"antelopine kangaroo"
+"429","Theriodictis_tarijensis",NA,NA
+"430","Naemorhedus_caudatus",37173,"Long-tailed goral"
+"431","Arctocephalus_galapagoensis",30584,"Galapagos fur seal"
+"432","Eudorcas_rufifrons",69304,"Red-fronted gazelle"
+"433","Archaeolemur_edwardsi",523822,NA
+"434","Myotragus_balearicus",201717,"Balearic islands cave goat"
+"435","Rupicapra_rupicapra",34869,"chamois"
+"436","Vombatus_ursinus",29139,"common wombat"
+"437","Mazama_rufina",1088028,"Ecuador red brocket"
+"438","Macropus_giganteus",9317,"eastern gray kangaroo"
+"439","Lasiorhinus_latifrons",30668,"southern hairy-nosed wombat"
+"440","Naemorhedus_griseus",561742,"Chinese goral"
+"441","Mazama_temama",1380339,"Central American red brocket"
+"442","Mazama_bororo",397615,"Sao Paulo bororo"
+"443","Gazella_cuvieri",69301,"Cuvier's gazelle"
+"444","Eudorcas_albonotata",NA,NA
+"445","Gazella_tingitana",NA,NA
+"446","Protopithecus_brasiliensis",NA,NA
+"447","Capreolus_miyakoensis",NA,NA
+"448","Pteronura_brasiliensis",9672,"giant otter"
+"449","Aonyx_congicus",NA,NA
+"450","Enhydra_lutris",34882,"sea otter"
+"451","Chrysocyon_brachyurus",68728,"maned wolf"
+"452","Hystrix_javanica",NA,NA
+"453","Gazella_dorcas",37751,"Dorcas gazelle"
+"454","Arabitragus_jayakari",330465,"Arabian tahr"
+"455","Acratocnus_odontrigonus",NA,NA
+"456","Canis_rufus",45781,"red wolf"
+"457","Mazama_americana",43334,"red brocket"
+"458","Gazella_gazella",69302,"mountain gazelle"
+"459","Capreolus_capreolus",9858,"Western roe deer"
+"460","Myrmecophaga_tridactyla",71006,"giant anteater"
+"461","Gazella_leptoceros",69303,"Rhim gazelle"
+"462","Lycaon_pictus",9622,"African hunting dog"
+"463","Muntiacus_feae",71855,"Fea's muntjac"
+"464","Macropus_fuliginosus",9316,"western gray kangaroo"
+"465","Castor_canadensis",51338,"American beaver"
+"466","Acratocnus_ye",2546656,NA
+"467","Pecari_tajacu",9829,"collared peccary"
+"468","Macropus_robustus",9319,"common wallaroo"
+"469","Dusicyon_australis",673762,"Falkland islands wolf"
+"470","Mazama_pandora",1380314,"Yucatan brown brocket"
+"471","Capricornis_swinhoei",34866,"Taiwan serow"
+"472","Babakotia_radofilai",NA,NA
+"473","Neofelis_nebulosa",61452,"Clouded leopard"
+"474","Neofelis_diardi",427616,"Sunda clouded leopard"
+"475","Muknalia_minima",NA,NA
+"476","Caipora_bambuiorum",NA,NA
+"477","Eudorcas_thomsonii",69308,"Thomson's gazelle"
+"478","Cephalophus_niger",129226,"black duiker"
+"479","Gazella_marica",123934,"sand gazelle"
+"480","Semnopithecus_ajax",NA,NA
+"481","Procapra_picticaudata",59540,"Tibetan gazelle"
+"482","Pelea_capreolus",59552,"common rhebok"
+"483","Gazella_spekei",69307,"Speke's gazelle"
+"484","Cephalophus_ogilbyi",129228,"Ogilby's duiker"
+"485","Cephalophus_dorsalis",97360,"bay duiker"
+"486","Muntiacus_gongshanensis",145526,"Gongshanensis muntjac"
+"487","Hystrix_refossa",NA,NA
+"488","Sylvicapra_grimmia",119562,"bush duiker"
+"489","Papio_cynocephalus",9556,"Yellow baboon"
+"490","Tetracerus_quadricornis",73823,"four-horned antelope"
+"491","Castor_fiber",10185,"Eurasian beaver"
+"492","Aonyx_capensis",76722,"African clawless otter"
+"493","Gazella_bennettii",69300,"chinkara"
+"494","Cervus_astylodon",NA,NA
+"495","Mandrillus_sphinx",9561,"mandrill"
+"496","Cephalophus_callipygus",129223,"Peters' duiker"
+"497","Muntiacus_vaginalis",9887,NA
+"498","Archaeolemur_majori",523821,NA
+"499","Lynx_lynx",13125,"Eurasian lynx"
+"500","Dasypus_bellus",NA,NA
+"501","Muntiacus_montanus",NA,NA
+"502","Cephalophus_zebra",129233,"zebra duiker"
+"503","Semnopithecus_schistaceus",NA,NA
+"504","Semnopithecus_hector",867382,"Tarai gray langur"
+"505","Ourebia_ourebi",59536,"oribi"
+"506","Theropithecus_gelada",9565,"gelada"
+"507","Gulo_gulo",48420,"wolverine"
+"508","Macropus_bernardus",9323,"black wallaroo"
+"509","Cryptoprocta_spelea",NA,NA
+"510","Cephalophus_weynsi",129232,"Weyns's duiker"
+"511","Macropus_rufogriseus",1960652,"red-necked wallaby"
+"512","Mazama_nana",397613,"Pygmy brocket"
+"513","Mazama_chunyi",1826176,"dwarf brocket"
+"514","Mazama_bricenii",1826177,"Merida brocket"
+"515","Colobus_guereza",33548,"mantled guereza"
+"516","Mazama_gouazoubira",52407,"gray brocket"
+"517","Hystrix_cristata",10137,"crested porcupine"
+"518","Protocyon_troglodytes",NA,NA
+"519","Gazella_saudiya",69305,"Saudi gazelle"
+"520","Muntiacus_muntjak",9888,"muntjak"
+"521","Muntiacus_atherodes",1826178,"Bornean yellow muntjac"
+"522","Papio_papio",100937,"Guinea baboon"
+"523","Moschus_leucogaster",68414,NA
+"524","Wallabia_bicolor",9330,"swamp wallaby"
+"525","Muntiacus_truongsonensis",71859,"Annamite muntjac"
+"526","Muntiacus_rooseveltorum",109295,"Roosevelt muntjac"
+"527","Mazama_nemorivaga",397661,NA
+"528","Mandrillus_leucophaeus",9568,"drill"
+"529","Macropus_agilis",9313,"Agile wallaby"
+"530","Macaca_munzala",402888,"Arunachal macaque"
+"531","Papio_hamadryas",9557,"hamadryas baboon"
+"532","Hystrix_africaeaustralis",10138,"Cape porcupine"
+"533","Cephalophus_harveyi",129224,"Harvey's duiker"
+"534","Semnopithecus_entellus",88029,"Hanuman langur"
+"535","Moschus_cupreus",2358212,"Kashmir muskdeer"
+"536","Moschus_chrysogaster",68412,"alpine musk deer"
+"537","Colobus_angolensis",54131,"Angolan colobus"
+"538","Mesopropithecus_pithecoides",NA,NA
+"539","Hydropotes_inermis",9883,"Chinese water deer"
+"540","Daubentonia_robustus",NA,NA
+"541","Cephalophus_nigrifrons",129227,"black-fronted duiker"
+"542","Caracal_caracal",61394,NA
+"543","Muntiacus_reevesi",9886,"Reeves' muntjac"
+"544","Macropus_parryi",9318,"whiptail wallaby"
+"545","Brachyteles_arachnoides",30594,"woolly spider monkey"
+"546","Canis_latrans",9614,"coyote"
+"547","Dendrolagus_ursinus",2219194,NA
+"548","Plesiorycteropus_madagascariensis",NA,NA
+"549","Semnopithecus_dussumieri",NA,NA
+"550","Dendrolagus_inustus",38604,"grizzled tree kangaroo"
+"551","Neocnus_comes",2546658,NA
+"552","Rungwecebus_kipunji",371039,"Highland mangabey"
+"553","Papio_kindae",208091,"Kinda baboon"
+"554","Pachylemur_jullyi",1513475,NA
+"555","Moschus_moschiferus",68415,"Siberian musk deer"
+"556","Meles_meles",9662,"Eurasian badger"
+"557","Dusicyon_avus",1316008,NA
+"558","Oreotragus_oreotragus",66444,"klipspringer"
+"559","Viverra_civettina",NA,NA
+"560","Cuon_alpinus",68730,"dhole"
+"561","Cephalophus_leucogaster",70738,"white-bellied duiker"
+"562","Moschus_fuscus",68413,"dusky musk deer"
+"563","Dinomys_branickii",108858,"pacarana"
+"564","Semnopithecus_priam",1208733,"tufted gray langur"
+"565","Hystrix_indica",192883,NA
+"566","Macaca_sylvanus",9546,"Barbary ape"
+"567","Rhinopithecus_roxellana",61622,"golden snub-nosed monkey"
+"568","Philantomba_maxwellii",907741,"Maxwell's duiker"
+"569","Muntiacus_putaoensis",109294,"Leaf deer"
+"570","Macaca_thibetana",54602,"Pere David's macaque"
+"571","Macaca_assamensis",9551,"Assam macaque"
+"572","Leptailurus_serval",61405,"serval"
+"573","Civettictis_civetta",94186,"African civet"
+"574","Cephalophus_rufilatus",129230,"red-flanked duiker"
+"575","Cephalophus_natalensis",69299,"Natal duiker"
+"576","Colobus_satanas",517012,"Black Colobus"
+"577","Trachypithecus_johnii",66063,"Nilgiri langur"
+"578","Leopardus_pardalis",32538,"ocelot"
+"579","Colobus_vellerosus",378195,NA
+"580","Rhinopithecus_brelichi",224329,"Gray snub-nosed monkey"
+"581","Pachylemur_insignis",NA,NA
+"582","Meles_anakuma",191034,"Japanese badger"
+"583","Catopuma_temminckii",61455,"Asiatic golden cat"
+"584","Trachypithecus_pileatus",164651,NA
+"585","Rhinopithecus_strykeri",1194336,"Burmese snub-nosed monkey"
+"586","Macropus_dorsalis",651581,"Black-striped wallaby"
+"587","Dicroceros_spA",NA,NA
+"588","Cynotherium_sardous",NA,NA
+"589","Sarcophilus_harrisii",9305,"Tasmanian devil"
+"590","Mesopropithecus_globiceps",NA,NA
+"591","Dendrolagus_bennettianus",168239,NA
+"592","Piliocolobus_pennantii",591944,"Pennant's red Colobus"
+"593","Hyemoschus_aquaticus",666915,"Water chevrotain"
+"594","Caracal_aurata",NA,NA
+"595","Capromeryx_minor",NA,NA
+"596","Raphicerus_campestris",59544,"steenbok"
+"597","Neocnus_dousman",2546657,NA
+"598","Macaca_fuscata",9542,"Japanese macaque"
+"599","Dendrolagus_scottae",65609,"tenkile tree kangaroo"
+"600","Piliocolobus_oustaleti",NA,NA
+"601","Canis_aureus",68724,"golden jackal"
+"602","Piliocolobus_bouvieri",NA,NA
+"603","Piliocolobus_epieni",NA,NA
+"604","Phascolarctos_cinereus",38626,"koala"
+"605","Raphicerus_melanotis",66435,"Cape grysbok"
+"606","Dorcatragus_megalotis",1027983,"beira"
+"607","Canis_adustus",68723,"side-striped jackal"
+"608","Dendrolagus_dorianus",65608,"Doria's tree kangaroo"
+"609","Warendja_wakefieldi",NA,NA
+"610","Symphalangus_syndactylus",9590,"siamang"
+"611","Proteles_cristata",9680,"aardwolf"
+"612","Megalibgwilia_ramsayi",NA,NA
+"613","Macropus_greyi",NA,NA
+"614","Canis_simensis",32534,"Ethiopian wolf"
+"615","Borungaboodie_hatcheri",NA,NA
+"616","Ailurops_ursinus",165204,NA
