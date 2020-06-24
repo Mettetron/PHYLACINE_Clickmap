@@ -57,7 +57,7 @@ ui <- fluidPage(
   title = "PHYLACINE - Mammal Habitats",
   
   h2("PHYLACINE - Mammal Habitats"),
-  h4("Click map to reveal local species of large (1kg+) mammals"),
+  h4("Click map to reveal local species of large (10kg+) mammals"),
   plotOutput("map", click = "plot_click"),
   fluidRow(
     column(12, align="center",
