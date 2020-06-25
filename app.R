@@ -14,6 +14,9 @@ library(shiny)
 library(raster)
 library(sf)
 library(DT)
+library(rgdal)
+library(tidyverse)
+library(ggthemes)
 
 # Trait table listing all species in PHYLACINE
 phy <- read.csv("https://raw.githubusercontent.com/MegaPast2Future/PHYLACINE_1.2/master/Data/Traits/Trait_data.csv", sep = ",")
@@ -28,6 +31,18 @@ phy.m.land$commName <- comm.n$common
 # base raster for plot - world, no antarctica
 w <- raster("continents.tif")  # in GitHub repository for Phylacine_Clickmap
 w[!is.na(w)] <- 1 # all continents have same value
+
+# Load coastline file
+coastlines <- readOGR("ne_10m_coastline.shp")  # needs library(rgdal)
+coastlines.simp <- gSimplify(coastlines, 
+                             tol = 0.5, # higher tol = more simple
+                             topologyPreserve = FALSE)  # gets rid of a ton of tiny islands
+
+# turn the data back into a spatial lines data frame 
+coastlines<- SpatialLinesDataFrame(coastlines.simp, coastlines@data) 
+coastlines <- spTransform(coastlines, crs(w))
+coastlines.df <- fortify(coastlines)
+
 
 # load species per pixel data frame (make_speciesPerPixel.R)
 s.px.df <- read.csv("PhylacineClickmap_speciesPerPixel_10kg.csv", row.names = 1)
@@ -62,7 +77,7 @@ ui <- fluidPage(
   fluidRow(
     column(12, align="center",
            radioButtons('range_type', "Choose distribution", 
-                        choices = c("All", "Natural", "Current", "Threatened", "Missing"), 
+                        choices = c("All", "Present-natural", "Current", "Threatened", "Missing"), 
                         selected = "All",
                         inline = TRUE)
     )
@@ -108,78 +123,29 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   output$map <- renderPlot({
-    par(mar = c(0, 0, 0, 0))
-    plot(w, col = "forestgreen", box = FALSE, axes = FALSE, legend = FALSE)
+    rangePlot <- function(my.sp.r, my.color) {
+      my.sp.r.spdf <- as(my.sp.r, "SpatialPixelsDataFrame")
+      my.sp.r.df <- as_tibble(my.sp.r.spdf)
+      colnames(my.sp.r.df) <- c("value", "x", "y")
+      
+      ggplot(my.sp.r.df, aes(x = x, y = y, fill=value)) +
+        geom_tile() +
+        coord_equal(ylim=c(-5800000, 7348382)) +  # gets rid of antarctica
+        scale_fill_gradient(name="Number of species", low="white", high=my.color) +
+        theme_map() +
+        theme(legend.title = element_text(size = 14), legend.text = element_text(size = 14)) +
+        geom_path(data = coastlines.df, aes(x = long, y = lat, group = group), inherit.aes = F, col = "black", lwd = .25)
+    }
     if(input$range_type == "All") {
-      range.col <- "gold2"
-      sp.r <- all.sp.r
-      sp.max <- max(values(sp.r), na.rm=TRUE)
-      sp.mid <- round(max(values(sp.r), na.rm=TRUE)/2, 0)
-      plot(sp.r, 
-           col = colorRampPalette(c("white", range.col))(sp.max), 
-           add = TRUE, legend = FALSE)
-      legend("bottomleft", 
-             title = "Number of species",
-             legend = c(0, sp.mid, sp.max), 
-             fill = c("white", colorRampPalette(c("white", range.col))(sp.max)[sp.mid], range.col),
-             border = "black",
-             box.lwd = 0, cex = 1.5)
-    } else if (input$range_type == "Natural") {
-      range.col <- "blue"
-      sp.r <- natural.sp.r
-      sp.max <- max(values(sp.r), na.rm=TRUE)
-      sp.mid <- round(max(values(sp.r), na.rm=TRUE)/2, 0)
-      plot(sp.r, 
-           col = colorRampPalette(c("white", range.col))(sp.max), 
-           add = TRUE, legend = FALSE)
-      legend("bottomleft", 
-             title = "Number of species",
-             legend = c(0, sp.mid, sp.max), 
-             fill = c("white", colorRampPalette(c("white", range.col))(sp.max)[sp.mid], range.col),
-             border = "black",
-             box.lwd = 0, cex = 1.5)
+      rangePlot(all.sp.r, "gold2")
+    } else if (input$range_type == "Present-natural") {
+      rangePlot(natural.sp.r, "blue")
     } else if (input$range_type == "Current") {
-      range.col <- "orange"
-      sp.r <- current.sp.r
-      sp.max <- max(values(sp.r), na.rm=TRUE)
-      sp.mid <- round(max(values(sp.r), na.rm=TRUE)/2, 0)
-      plot(sp.r, 
-           col = colorRampPalette(c("white", range.col))(sp.max), 
-           add = TRUE, legend = FALSE)
-      legend("bottomleft", 
-             title = "Number of species",
-             legend = c(0, sp.mid, sp.max), 
-             fill = c("white", colorRampPalette(c("white", range.col))(sp.max)[sp.mid], range.col),
-             border = "black",
-             box.lwd = 0, cex = 1.5)
+      rangePlot(current.sp.r, "orange")
     } else if (input$range_type == "Threatened") {
-      range.col <- "red"
-      sp.r <- threatened.sp.r
-      sp.max <- max(values(sp.r), na.rm=TRUE)
-      sp.mid <- round(max(values(sp.r), na.rm=TRUE)/2, 0)
-      plot(sp.r, 
-           col = colorRampPalette(c("white", range.col))(sp.max), 
-           add = TRUE, legend = FALSE)
-      legend("bottomleft",
-             title = "Number of species",
-             legend = c(0, sp.mid, sp.max), 
-             fill = c("white", colorRampPalette(c("white", range.col))(sp.max)[sp.mid], range.col),
-             border = "black",
-             box.lwd = 0, cex = 1.5)
+      rangePlot(threatened.sp.r, "red")
     }  else if (input$range_type == "Missing") {
-      range.col <- "forestgreen"
-      sp.r <- missing.sp.r
-      sp.max <- max(values(sp.r), na.rm=TRUE)
-      sp.mid <- round(max(values(sp.r), na.rm=TRUE)/2, 0)
-      plot(sp.r, 
-           col = colorRampPalette(c("white", range.col))(sp.max), 
-           add = TRUE, legend = FALSE)
-      legend("bottomleft", 
-             title = "Number of species",
-             legend = c(0, sp.mid, sp.max), 
-             fill = c("white", colorRampPalette(c("white", range.col))(sp.max)[sp.mid], range.col),
-             border = "black",
-             box.lwd = 0, cex = 1.5)
+      rangePlot(missing.sp.r, "forestgreen")
     }
   })
   # tables of the species present
@@ -196,7 +162,7 @@ server <- function(input, output) {
       my.row <- s.px.df[s.px.df$coords == nearest.px.coords, ][-1]
       if(input$range_type == "All") {
         click.species <- names(my.row)[my.row > 0]
-      } else if(input$range_type == "Natural") {  # animals that could and do exist at location
+      } else if(input$range_type == "Present-natural") {  # animals that could and do exist at location
         click.species <- names(my.row)[my.row == 1 | my.row == 3]
       } else if(input$range_type == "Current") {  # animals that currently exist at location
         click.species <- names(my.row)[my.row > 1]
