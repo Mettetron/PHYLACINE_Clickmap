@@ -17,6 +17,7 @@ library(DT)
 library(rgdal)
 library(tidyverse)
 library(ggthemes)
+library(rgeos)  # for simplifying spatial lines object
 
 # Trait table listing all species in PHYLACINE
 phy <- read.csv("https://raw.githubusercontent.com/MegaPast2Future/PHYLACINE_1.2/master/Data/Traits/Trait_data.csv", sep = ",")
@@ -33,7 +34,7 @@ w <- raster("continents.tif")  # in GitHub repository for Phylacine_Clickmap
 w[!is.na(w)] <- 1 # all continents have same value
 
 # Load coastline file
-coastlines <- readOGR("ne_10m_coastline.shp")  # needs library(rgdal)
+coastlines <- readOGR("ne-coastlines-10m/ne_10m_coastline.shp")  # needs library(rgdal)
 coastlines.simp <- gSimplify(coastlines, 
                              tol = 0.5, # higher tol = more simple
                              topologyPreserve = FALSE)  # gets rid of a ton of tiny islands
