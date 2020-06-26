@@ -84,6 +84,11 @@ ui <- fluidPage(
                         inline = TRUE)
     )
   ),
+  fluidRow(
+    column(6, offset=3, align="center",
+           h5(textOutput('range_explain'))
+    )
+  ),
   hr(),
   fluidRow(
     column(12,
@@ -155,6 +160,21 @@ server <- function(input, output) {
     }  else if (input$range_type == "Missing") {
       rangePlot(missing.sp.r, "forestgreen")
     }
+  })
+  # explaining range text box
+  output$range_explain <- renderText({
+    if(input$range_type == "All") {
+      my.text <- "All = Present-natural + Current "
+    } else if (input$range_type == "Present-natural") {
+      my.text <- "The Present-natural range is a counterfactual scenario that shows where species would live without Anthropogenic pressures. Includes extinct species"
+    } else if (input$range_type == "Current") {
+      my.text <- "The Current range shows where species actually live now"
+    } else if (input$range_type == "Threatened") {
+      my.text <- "The Threatened range is a subset of the Current range, but shows only species that have IUCN status of VU, EN, or CR"
+    }  else if (input$range_type == "Missing") {
+      my.text <- "The Missing range shows where the species could live (according to their Present-natural ranges), but don't. Does not include extinct species"
+    }
+    my.text
   })
   # tables of the species present
   spec_tab <- reactive({
