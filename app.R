@@ -83,11 +83,6 @@ ui <- fluidPage(
                         inline = TRUE)
     )
   ),
-  fluidRow(
-    column(2, offset = 10, 
-           downloadButton("downloadMap", "Download Map")
-    )
-  ),
   hr(),
   fluidRow(
     column(12,
@@ -143,19 +138,14 @@ server <- function(input, output) {
         geom_path(data = coastlines.df, aes(x = long, y = lat, group = group), inherit.aes = F, col = "black", lwd = .25)
     }
     if(input$range_type == "All") {
-      ggsave("plot.pdf", rangePlot(all.sp.r, "gold2"))
       rangePlot(all.sp.r, "gold2")
     } else if (input$range_type == "Present-natural") {
-      ggsave("plot.pdf", rangePlot(natural.sp.r, "blue"))
       rangePlot(natural.sp.r, "blue")
     } else if (input$range_type == "Current") {
-      ggsave("plot.pdf", rangePlot(current.sp.r, "orange"))
       rangePlot(current.sp.r, "orange")
     } else if (input$range_type == "Threatened") {
-      ggsave("plot.pdf", rangePlot(threatened.sp.r, "red"))
       rangePlot(threatened.sp.r, "red")
     }  else if (input$range_type == "Missing") {
-      ggsave("plot.pdf", rangePlot(missing.sp.r, "forestgreen"))
       rangePlot(missing.sp.r, "forestgreen")
     }
   })
@@ -200,14 +190,6 @@ server <- function(input, output) {
     },
     content = function(file) {
       write.csv(spec_tab(), file, row.names = FALSE)
-    }
-  )
-  output$downloadMap <- downloadHandler(
-    filename = function() {
-      "plot.pdf"
-    },
-    content = function(file) {
-      file.copy("plot.pdf", file, overwrite=TRUE)
     }
   )
 }
