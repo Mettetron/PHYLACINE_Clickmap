@@ -8,6 +8,7 @@
     # "PhylacineClickmap_speciesPerPixel_10kg.csv" - in gitHub repository, made from PHYLACINE with "make_speciesPerPixel.R"
     # "PhylacineClickmap_speciesNumbers_10kg.csv" - in gitHub repository, made from PHYLACINE with "make_speciesNumbers.R"
     # "PhylacineClickmap_commonNames_10kg.csv" - in gitHub repository, made with "make_commonNames.R
+    # folder "ne-coastlines-10m" containing files from naturalearthdata.com - in gitHub repository
 
 
 library(shiny)
