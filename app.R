@@ -123,6 +123,11 @@ ui <- fluidPage(
 # Define Server -----------------------------------------------------------
 
 server <- function(input, output) {
+  # Reactive plot point
+  source_coords <- reactiveValues(xy=data.frame(x=c(1,1),  y=c(1,1)))
+  observeEvent(input$plot_click, {
+    source_coords$xy[2,] <- c(input$plot_click$x, input$plot_click$y)
+  })
   output$map <- renderPlot({
     rangePlot <- function(my.sp.r, my.color) {
       my.sp.r.spdf <- as(my.sp.r, "SpatialPixelsDataFrame")
@@ -135,7 +140,8 @@ server <- function(input, output) {
         scale_fill_gradient(name="Number of species", low="white", high=my.color) +
         theme_map() +
         theme(legend.title = element_text(size = 14), legend.text = element_text(size = 14)) +
-        geom_path(data = coastlines.df, aes(x = long, y = lat, group = group), inherit.aes = F, col = "black", lwd = .25)
+        geom_path(data = coastlines.df, aes(x = long, y = lat, group = group), inherit.aes = F, col = "black", lwd = .25) +
+        geom_point(aes(x = source_coords$xy[2,1], y = source_coords$xy[2,2]), col="black", pch=1, size=3)
     }
     if(input$range_type == "All") {
       rangePlot(all.sp.r, "gold2")
@@ -151,8 +157,8 @@ server <- function(input, output) {
   })
   # tables of the species present
   spec_tab <- reactive({
-    click.coord.x <- as.numeric(input$plot_click$x)
-    click.coord.y <- as.numeric(input$plot_click$y)
+    click.coord.x <- source_coords$xy[2,1]
+    click.coord.y <- source_coords$xy[2,2]
     px.coords.x <- as.numeric(sapply(strsplit(as.character(s.px.df$coords), "_"), "[[", 1))
     px.coords.y <- as.numeric(sapply(strsplit(as.character(s.px.df$coords), "_"), "[[", 2))
     my.dists <- abs(px.coords.x - click.coord.x) + abs(px.coords.y - click.coord.y)
