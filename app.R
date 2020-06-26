@@ -53,9 +53,6 @@ s.px.df <- read.csv("PhylacineClickmap_speciesPerPixel_10kg.csv", row.names = 1)
 sp.num.df <- read.csv("PhylacineClickmap_speciesNumbers_10kg.csv", row.names = 1)
 
 # make rasters based on w, but with values taken from speciesNumbers df (coords match)
-all.sp.r <- w
-all.sp.r[all.sp.r] <- sp.num.df$all
-
 natural.sp.r <- w
 natural.sp.r[natural.sp.r] <- sp.num.df$natural
 
@@ -78,9 +75,9 @@ ui <- fluidPage(
   plotOutput("map", click = "plot_click"),
   fluidRow(
     column(12, align="center",
-           radioButtons('range_type', "Choose distribution", 
-                        choices = c("All", "Present-natural", "Current", "Threatened", "Missing"), 
-                        selected = "All",
+           radioButtons('range_type', "Choose range", 
+                        choices = c("Present-natural", "Current", "Threatened", "Missing"), 
+                        selected = "Current",
                         inline = TRUE)
     )
   ),
@@ -149,12 +146,10 @@ server <- function(input, output) {
         geom_path(data = coastlines.df, aes(x = long, y = lat, group = group), inherit.aes = F, col = "black", lwd = .25) +
         geom_point(aes(x = source_coords$xy[2,1], y = source_coords$xy[2,2]), col="black", pch=1, size=3)
     }
-    if(input$range_type == "All") {
-      rangePlot(all.sp.r, "gold2")
-    } else if (input$range_type == "Present-natural") {
+    if (input$range_type == "Present-natural") {
       rangePlot(natural.sp.r, "blue")
     } else if (input$range_type == "Current") {
-      rangePlot(current.sp.r, "orange")
+      rangePlot(current.sp.r, "gold2")
     } else if (input$range_type == "Threatened") {
       rangePlot(threatened.sp.r, "red")
     }  else if (input$range_type == "Missing") {
@@ -163,9 +158,7 @@ server <- function(input, output) {
   })
   # explaining range text box
   output$range_explain <- renderText({
-    if(input$range_type == "All") {
-      my.text <- "All = Present-natural + Current "
-    } else if (input$range_type == "Present-natural") {
+    if (input$range_type == "Present-natural") {
       my.text <- "The Present-natural range is a counterfactual scenario that shows where species would live without Anthropogenic pressures. Includes extinct species"
     } else if (input$range_type == "Current") {
       my.text <- "The Current range shows where species actually live now"
@@ -188,9 +181,7 @@ server <- function(input, output) {
     } else {
       nearest.px.coords <- s.px.df$coords[which(my.dists==min(my.dists))]
       my.row <- s.px.df[s.px.df$coords == nearest.px.coords, ][-1]
-      if(input$range_type == "All") {
-        click.species <- names(my.row)[my.row > 0]
-      } else if(input$range_type == "Present-natural") {  # animals that could and do exist at location
+      if(input$range_type == "Present-natural") {  # animals that could and do exist at location
         click.species <- names(my.row)[my.row == 1 | my.row == 3]
       } else if(input$range_type == "Current") {  # animals that currently exist at location
         click.species <- names(my.row)[my.row > 1]
