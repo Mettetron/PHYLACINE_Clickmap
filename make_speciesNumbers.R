@@ -10,7 +10,7 @@
 
 
 # load species per pixel data frame (from make_speciesPerPixel.R)
-s.px.df <- read.csv("PhylacineClickmap_speciesPerPixel_10kg.csv", row.names = 1)
+s.px.df <- read.csv("PhylacineClickmap_speciesPerPixel.csv", row.names = 1)
 
 # Trait table listing all species in PHYLACINE
 phy <- read.csv("https://raw.githubusercontent.com/MegaPast2Future/PHYLACINE_1.2/master/Data/Traits/Trait_data.csv", sep = ",")
@@ -58,6 +58,12 @@ species.numbers.df <- data.frame(coords = s.px.df$coords,
                                  threatened = threatened.sp.v,
                                  missing = missing.sp.v)
 
-toc()
+toc()  # 8521.692 sec elapsed
 
-write.csv(species.numbers.df, "PhylacineClickmap_speciesNumbers_10kg.csv")
+write.csv(species.numbers.df, "PhylacineClickmap_speciesNumbers.csv")
+
+# smaller file type
+# for faster load times and gitHub space limits
+saveRDS(species.numbers.df, "PhylacineClickmap_speciesNumbers.rds")  # smaller file type
+
+

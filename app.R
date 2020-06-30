@@ -5,9 +5,9 @@
 
 # requires:
     # "continents.tif" - in gitHub repository
-    # "PhylacineClickmap_speciesPerPixel_10kg.csv" - in gitHub repository, made from PHYLACINE with "make_speciesPerPixel.R"
-    # "PhylacineClickmap_speciesNumbers_10kg.csv" - in gitHub repository, made from PHYLACINE with "make_speciesNumbers.R"
-    # "PhylacineClickmap_commonNames_10kg.csv" - in gitHub repository, made with "make_commonNames.R
+    # "PhylacineClickmap_speciesPerPixel.rds" - in gitHub repository, made from PHYLACINE with "make_speciesPerPixel.R"
+    # "PhylacineClickmap_speciesNumbers.rds" - in gitHub repository, made from PHYLACINE with "make_speciesNumbers.R"
+    # "PhylacineClickmap_commonNames.rds" - in gitHub repository, made with "make_commonNames.R
     # folder "ne-coastlines-10m" containing files from naturalearthdata.com - in gitHub repository
 
 
@@ -24,10 +24,10 @@ library(rgeos)  # for simplifying spatial lines object
 phy <- read.csv("https://raw.githubusercontent.com/MegaPast2Future/PHYLACINE_1.2/master/Data/Traits/Trait_data.csv", sep = ",")
 phy.m <- phy[rev(order(phy$Mass.g)), ]  # sort by mass, heaviest first
 phy.m.land <- phy.m[phy.m$Terrestrial == 1, ]  # only keep land mammals
-weight.limit <- 10 # set weight limit in kg
-phy.m.land <- phy.m.land[phy.m.land$Mass.g >= (weight.limit*1000), ]
+# weight.limit <- 10 # set weight limit in kg
+# phy.m.land <- phy.m.land[phy.m.land$Mass.g >= (weight.limit*1000), ]
 # add common names
-comm.n <- read.csv("PhylacineClickmap_commonNames_10kg.csv", row.names=1)
+comm.n <- readRDS("PhylacineClickmap_commonNames.rds")
 phy.m.land$commName <- comm.n$common
 
 # base raster for plot - world, no antarctica
@@ -47,10 +47,10 @@ coastlines.df <- fortify(coastlines)
 
 
 # load species per pixel data frame (make_speciesPerPixel.R)
-s.px.df <- read.csv("PhylacineClickmap_speciesPerPixel_10kg.csv", row.names = 1)
+s.px.df <- readRDS("PhylacineClickmap_speciesPerPixel.rds")
 
 # load species number data frame (make_speciesNumbers.R) used for colored species denisty maps
-sp.num.df <- read.csv("PhylacineClickmap_speciesNumbers_10kg.csv", row.names = 1)
+sp.num.df <- readRDS("PhylacineClickmap_speciesNumbers.rds")
 
 # make rasters based on w, but with values taken from speciesNumbers df (coords match)
 natural.sp.r <- w
@@ -71,7 +71,7 @@ ui <- fluidPage(
   title = "PHYLACINE - Mammal Habitats",
   
   h2("PHYLACINE - Mammal Habitats"),
-  h4("Click map to reveal local species of large (10kg+) mammals"),
+  h4("Click map to reveal local species of terrestrial mammals"),
   plotOutput("map", click = "plot_click"),
   fluidRow(
     column(12, align="center",

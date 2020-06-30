@@ -11,8 +11,8 @@ library(raster)
 phy <- read.csv("https://raw.githubusercontent.com/MegaPast2Future/PHYLACINE_1.2/master/Data/Traits/Trait_data.csv", sep = ",")
 phy.m <- phy[rev(order(phy$Mass.g)), ]  # sort by mass, heaviest first
 phy.m.land <- phy.m[phy.m$Terrestrial == 1, ]  # only keep land mammals
-weight.limit <- 10 # set weight limit in kg
-phy.m.land <- phy.m.land[phy.m.land$Mass.g >= (weight.limit*1000), ]
+# weight.limit <- 10 # set weight limit in kg
+# phy.m.land <- phy.m.land[phy.m.land$Mass.g >= (weight.limit*1000), ]
 
 # used to get species distribution ranges 
 url <- "/vsicurl/https://github.com/MegaPast2Future/PHYLACINE_1.2/blob/master/Data/Ranges/"
@@ -51,4 +51,6 @@ for(species in phy.m.land$Binomial.1.2) {
 toc()  # 2075.036 sec elapsed
 
 # export to use in Shiny App
-write.csv(s.px.df, sprintf("PhylacineClickmap_speciesPerPixel_%skg.csv", weight.limit))
+#write.csv(s.px.df, sprintf("PhylacineClickmap_speciesPerPixel_%skg.csv", weight.limit))
+#write.csv(s.px.df, "PhylacineClickmap_speciesPerPixel.csv")
+saveRDS(s.px.df, "PhylacineClickmap_speciesPerPixel.rds")
