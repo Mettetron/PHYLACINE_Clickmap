@@ -8,8 +8,6 @@ library(tictoc)
 phy <- read.csv("https://raw.githubusercontent.com/MegaPast2Future/PHYLACINE_1.2/master/Data/Traits/Trait_data.csv", sep = ",")
 phy.m <- phy[rev(order(phy$Mass.g)), ]  # sort by mass, heaviest first
 phy.m.land <- phy.m[phy.m$Terrestrial == 1, ]  # only keep land mammals
-# weight.limit <- 10 # set weight limit in kg
-# phy.m.land <- phy.m.land[phy.m.land$Mass.g >= (weight.limit*1000), ]
 
 # get species names, get uids, get common names
 spec.latin <- gsub("_", " ", phy.m.land$Binomial.1.2)
