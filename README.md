@@ -1,5 +1,6 @@
-# PHYLACINE_Clickmap
-Shiny app with interactive map based on PHYLACINE_1.2 data
+PHYLACINE clickmap
+=================================================================================
+<br>
+Clickmap is an interactive shiny app that shows which species of land-living mammals exist 
+or could exist at any user-defined geographical location.
 
-PHYLACINE original article: href="https://doi.org/10.1002/ecy.2443
-PHYLACINE_1.2 GitHub: https://github.com/MegaPast2Future/PHYLACINE_1.2
