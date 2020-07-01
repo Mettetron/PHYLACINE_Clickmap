@@ -10,3 +10,15 @@ or could exist at any user-defined geographical location.
 ***Example image:***
 
 ![Clickmap_app](example.png)
+
+
+***Usage - Local***
+- Clone GitHub repo via URL: <br>
+![Recordit GIF](http://g.recordit.co/IN6ZAuRlVt.gif)
+- Create new project in RStudio: File -> New Project.. <br>
+![Recordit GIF](http://g.recordit.co/X3IRdWw2K0.gif)
+- Make sure you have all relevant packages installed (listed at the start of app.R)
+- Run all of app.R from RStudio
+
+***Usage - Online***
+- Temporarily accesible [here](https://mettetron.shinyapps.io/PHYLACINE_Clickmap2)
