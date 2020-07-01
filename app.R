@@ -10,7 +10,6 @@
     # "PhylacineClickmap_commonNames.rds" - in gitHub repository, made with "make_commonNames.R
     # folder "ne-coastlines-10m" containing files from naturalearthdata.com - in gitHub repository
 
-
 library(shiny)
 library(raster)
 library(sf)
@@ -113,10 +112,10 @@ ui <- fluidPage(
     )
   ),
   fluidRow(
-    column(3, offset=3,
+    column(3, offset=3, align="center",
            a("PHYLACINE GitHub repository", href="https://github.com/MegaPast2Future/PHYLACINE_1.2")
     ),
-    column(3,
+    column(3, align="center",
            a("PHYLACINE original article", href="https://doi.org/10.1002/ecy.2443")
     )
   )
