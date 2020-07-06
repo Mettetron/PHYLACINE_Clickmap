@@ -45,6 +45,11 @@ coastlines <- spTransform(coastlines, crs(w))
 coastlines.df <- fortify(coastlines)
 
 
+# # alternate outline method - using continent polygon
+# continents <- readOGR("continents-of-the-world/continents-of-the-world.shp")
+# continents <- spTransform(continents, crs(w))
+# continents <- fortify(continents)
+
 # load species per pixel data frame (make_speciesPerPixel.R)
 s.px.df <- readRDS("PhylacineClickmap_speciesPerPixel.rds")
 
@@ -143,6 +148,7 @@ server <- function(input, output) {
         theme_map() +
         theme(legend.title = element_text(size = 14), legend.text = element_text(size = 14)) +
         geom_path(data = coastlines.df, aes(x = long, y = lat, group = group), inherit.aes = F, col = "black", lwd = .25) +
+        #geom_polygon(data = continents, aes(x = long, y = lat, group = group), inherit.aes = F, col = "black", fill = "NA", lwd = .25) +
         geom_point(aes(x = source_coords$xy[2,1], y = source_coords$xy[2,2]), col="black", pch=1, size=3)
     }
     if (input$range_type == "Present-natural") {
