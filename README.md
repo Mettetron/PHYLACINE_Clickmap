@@ -13,7 +13,7 @@ or could exist at any user-defined geographical location.
 
 
 ***Usage - Online***
-- Temporarily accesible [here](https://mettetron.shinyapps.io/PHYLACINE_Clickmap2)
+- Temporarily accesible [here](https://mettetron.shinyapps.io/PhylacineClickmap/)
 
 ***Usage - Local***
 - Clone GitHub repo via URL: <br>
